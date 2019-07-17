@@ -1,0 +1,55 @@
+@font-face {
+  font-family: atures;
+  src: url(../font/Atures300.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  opacity: 0;
+}
+
+body.visible {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.globe-app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#controls {
+  position: absolute;
+  padding: 10px;
+  background: rgba(255, 255, 255, 1);
+  z-index: 1;
+  border-radius: 10px;
+  left: 5px;
+  top: 5px;
+}
+#controls h3 {
+  margin: 10px 0;
+}
+
+.planet-name {
+  font-family: atures;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: white;
+  font-size: 50px;
+  z-index: 10000;
+}
